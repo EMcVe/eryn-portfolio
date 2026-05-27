@@ -439,6 +439,58 @@ footer{background:var(--near-black);border-top:1px solid rgba(255,255,255,0.06);
     width: 100vw;
   }
 }
+@media (max-width: 760px) {
+  nav {
+    padding: 14px 10px;
+  }
+
+  .nav-logo {
+    font-size: 15px;
+    min-width: 104px;
+  }
+
+  .nav-links {
+    gap: 16px;
+    padding-right: 30px;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+  }
+
+  .hero-tagline {
+    font-size: clamp(35px, 10.5vw, 48px);
+  }
+
+  .wc-bg {
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    background: var(--black);
+  }
+
+  .vid-badge {
+    background: var(--black);
+    color: var(--yellow);
+    border-color: rgba(232,200,50,0.7);
+    margin: 0;
+    padding: 12px 18px;
+  }
+
+  .wc-ov {
+    padding-top: 30px;
+  }
+
+  .wc-title {
+    font-size: 28px;
+  }
+
+  .wc-desc,
+  .wc-result {
+    font-size: 16px;
+  }
+}
 </style>
 </head>
 <body>
