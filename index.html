@@ -508,28 +508,70 @@ img.wc-bg {
   }
 }
 @media (max-width: 760px) {
+ .spring-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.spring-bg {
+  position: absolute !important;
+  inset: 0 !important;
+  height: 100% !important;
+  background: linear-gradient(135deg,#4a1a7a 0%,#6b2d9e 35%,#9b4ab5 65%,#c8623a 100%) !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spring-logo-mark {
+  font-size: 78px;
+  color: #c9823a;
+  opacity: .9;
+  line-height: 1;
+}
+
+.spring-logo-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -.04em;
+  color: rgba(20,8,35,.62);
+}
+
+.spring-logo-sub {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .35em;
+  color: rgba(20,8,35,.45);
+}
+
+.spring-ov {
+  position: absolute !important;
+  inset: 0 !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 44px 48px !important;
+  background: linear-gradient(to top, rgba(25,8,45,.78) 0%, rgba(25,8,45,.22) 42%, transparent 70%) !important;
+}
+
+@media (max-width: 760px) {
   .spring-card {
-    position: relative;
     min-height: 520px;
-    overflow: hidden;
   }
 
-  .spring-card .wc-bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
+  .spring-ov {
+    padding: 34px 28px !important;
   }
 
-  .spring-card .wc-ov {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 34px 28px;
-    background: linear-gradient(to top, rgba(25,8,45,.97) 0%, rgba(25,8,45,.45) 45%, transparent 100%) !important;
+  .spring-logo-mark {
+    font-size: 58px;
+  }
+
+  .spring-logo-text {
+    font-size: 30px;
   }
 }
 </style>
@@ -738,17 +780,17 @@ img.wc-bg {
     </p>
   </div>
 </div>
-        <!-- The Spring — warm brand colors matching thespring.org -->
-    <div class="wc reveal spring-card">
-  <div class="wc-bg" style="background:
-    linear-gradient(to top, rgba(25,8,45,0.97) 0%, rgba(25,8,45,0.45) 42%, transparent 100%),
-    url('https://images.squarespace-cdn.com/content/v1/5c3649af5ffd20d8f2cfa5fe/1579139753059-4MBBX7VYWE0Q0F9T2NN/The+Spring+Logo.png') center center/34% no-repeat,
-    linear-gradient(135deg,#4a1a7a 0%,#6b2d9e 35%,#9b4ab5 65%,#c8623a 100%);
-  "></div>
-  <div class="wc-ov" style="background:transparent;">
+    <!-- The Spring – warm brand colors matching thespring.org -->
+<div class="wc reveal spring-card">
+  <div class="wc-bg spring-bg">
+    <div class="spring-logo-mark">✹</div>
+    <div class="spring-logo-text">THE SPRING</div>
+    <div class="spring-logo-sub">OF TAMPA BAY</div>
+  </div>
+
+  <div class="wc-ov spring-ov">
     <span class="wc-brand">The Spring — Purpose-Led Growth Strategy</span>
     <h3 class="wc-title">Building the Next 50 Years</h3>
-    <p class="wc-desc">Strategic roadmap, campaign platform, and KPI framework guiding the organization toward its 50th anniversary milestone in 2027 — aligning community impact, storytelling, and fundraising.</p>
   </div>
 </div>
 <!-- NIL -->
