@@ -508,12 +508,28 @@ img.wc-bg {
   }
 }
 @media (max-width: 760px) {
-  .wc-bg[style*="The+Spring+Logo"] {
-    display: none;
+  .spring-card {
+    position: relative;
+    min-height: 520px;
+    overflow: hidden;
   }
 
-  .wc-bg[style*="The+Spring+Logo"] + .wc-ov {
-    padding-top: 30px;
+  .spring-card .wc-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .spring-card .wc-ov {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 34px 28px;
+    background: linear-gradient(to top, rgba(25,8,45,.97) 0%, rgba(25,8,45,.45) 45%, transparent 100%) !important;
   }
 }
 </style>
