@@ -60,8 +60,21 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .ts-pill{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(18px,2vw,24px);color:var(--white);padding:0 28px;border-right:1px solid rgba(255,255,255,0.1);letter-spacing:-0.01em;}
 .ts-pill:first-child{padding-left:0;}
 .ts-pill:last-child{border-right:none;}
-.logo-grid{display:flex;flex-wrap:wrap;gap:16px;align-items:center;}
-.logo-item{display:flex;align-items:center;justify-content:center;}
+.logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 28px;align-items:center;}
+.logo-item{display:flex;align-items:center;justify-content:center;min-height:66px;}
+.logo-item img{display:block;width:auto;height:auto;max-width:120px;max-height:58px;object-fit:contain;}
+.logo-item:nth-child(2) img,
+.logo-item:nth-child(4) img,
+.logo-item:nth-child(6) img,
+.logo-item:nth-child(8) img,
+.logo-item:nth-child(13) img,
+.logo-item:nth-child(16) img{max-width:155px;max-height:66px;}
+.logo-item:nth-child(3) img,
+.logo-item:nth-child(11) img,
+.logo-item:nth-child(15) img{max-width:145px;max-height:64px;}
+.logo-item:nth-child(5) img,
+.logo-item:nth-child(9) img,
+.logo-item:nth-child(10) img{max-width:86px;max-height:70px;}
 .logo-text{font-family:"Syne",sans-serif;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);border:1px solid rgba(255,255,255,0.1);padding:5px 12px;transition:all 0.2s;}
 .logo-text:hover{color:var(--yellow);border-color:rgba(232,200,50,0.3);}
 #services{background:var(--cream);padding:48px 60px 100px;}
