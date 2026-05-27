@@ -160,6 +160,175 @@ footer{background:var(--near-black);border-top:1px solid rgba(255,255,255,0.06);
   .logo-item{min-height:52px;}
   .logo-grid{gap:18px 24px;}
 }
+@media (max-width: 760px) {
+  nav {
+    padding: 14px 16px;
+    gap: 18px;
+    overflow-x: auto;
+  }
+
+  .nav-logo {
+    font-size: 17px;
+    min-width: 92px;
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    gap: 22px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    white-space: nowrap;
+  }
+
+  .hero {
+    display: block;
+    min-height: auto;
+    padding-top: 86px;
+  }
+
+  .hero-left {
+    padding: 48px 24px 34px;
+  }
+
+  .hero-tagline {
+    font-size: clamp(42px, 13vw, 62px);
+    line-height: 0.96;
+  }
+
+  .hero-statement {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .hero-right {
+    display: block;
+    height: 360px;
+    margin: 0 24px 36px;
+  }
+
+  .hero-photo {
+    opacity: 1;
+    animation: none;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  .hero-cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn-dark,
+  .btn-outline {
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  #about,
+  #services,
+  #work,
+  #contact {
+    padding: 70px 24px;
+  }
+
+  .bridge,
+  .bridge2 {
+    padding: 48px 24px 0;
+  }
+
+  .three-sides-block {
+    margin-left: -24px;
+    margin-right: -24px;
+    padding: 34px 24px 40px;
+  }
+
+  .ts-pills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ts-pill {
+    font-size: 22px;
+    padding: 0 8px;
+    text-align: center;
+  }
+
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 18px;
+  }
+
+  .logo-item {
+    min-height: 76px;
+  }
+
+  .logo-item img {
+    width: min(var(--logo-w, 120px), 82%) !important;
+    max-height: 64px !important;
+  }
+
+  .work-grid {
+    display: block;
+    background: transparent;
+  }
+
+  .wc {
+    aspect-ratio: auto;
+    margin-bottom: 18px;
+  }
+
+  .wc-bg {
+    position: relative;
+    display: block;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .wc-ov {
+    position: relative;
+    inset: auto;
+    display: block;
+    background: var(--black);
+    padding: 22px 22px 24px;
+  }
+
+  .wc-brand {
+    display: block;
+    font-size: 9px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .wc-title {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+
+  .wc-desc,
+  .wc-result {
+    opacity: 1;
+    transform: none;
+  }
+
+  .vid-badge {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    margin-top: 14px;
+    width: max-content;
+  }
+
+  .wc-arrow {
+    display: none;
+  }
+}
 </style>
 </head>
 <body>
