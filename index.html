@@ -469,11 +469,22 @@ footer{background:var(--near-black);border-top:1px solid rgba(255,255,255,0.06);
   }
 
   .wc-bg {
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: cover;
-    background: var(--black);
-  }
+  position: relative;
+  width: 100%;
+  height: 220px;
+  display: block;
+  overflow: hidden;
+  background: var(--black);
+}
+
+.wc-bg img,
+img.wc-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
 
   .vid-badge {
     background: var(--black);
