@@ -445,67 +445,20 @@ footer{background:var(--near-black);border-top:1px solid rgba(255,255,255,0.06);
   }
 }
 @media (max-width: 760px) {
-  nav {
-    padding: 14px 10px;
+
+  /* SPRING CARD ONLY */
+  .work-grid .wc:nth-child(5) .wc-bg {
+    height: 220px !important;
+    background:
+      url('the-spring-logo.png') center center / 220px auto no-repeat,
+      var(--black) !important;
   }
 
-  .nav-logo {
-    font-size: 15px;
-    min-width: 104px;
+  .work-grid .wc:nth-child(5) .wc-bg img,
+  .work-grid .wc:nth-child(5) .wc-bg > div {
+    display: none !important;
   }
 
-  .nav-links {
-    gap: 16px;
-    padding-right: 30px;
-  }
-
-  .nav-links a {
-    font-size: 9px;
-    letter-spacing: 0.12em;
-  }
-
-  .hero-tagline {
-    font-size: clamp(35px, 10.5vw, 48px);
-  }
-
-  .wc-bg {
-  position: relative;
-  width: 100%;
-  height: 220px;
-  display: block;
-  overflow: hidden;
-  background: var(--black);
-}
-
-.wc-bg img,
-img.wc-bg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
-}
-
-  .vid-badge {
-    background: var(--black);
-    color: var(--yellow);
-    border-color: rgba(232,200,50,0.7);
-    margin: 0;
-    padding: 12px 18px;
-  }
-
-  .wc-ov {
-    padding-top: 30px;
-  }
-
-  .wc-title {
-    font-size: 28px;
-  }
-
-  .wc-desc,
-  .wc-result {
-    font-size: 16px;
-  }
 }
 </style>
 </head>
