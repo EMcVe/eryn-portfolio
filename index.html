@@ -451,20 +451,19 @@ footer{background:var(--near-black);border-top:1px solid rgba(255,255,255,0.06);
     position: relative !important;
     display: inline-flex !important;
     width: fit-content !important;
+    align-self: flex-start !important;
     margin: 0 !important;
     padding: 12px 18px !important;
     background: var(--black) !important;
     color: var(--yellow) !important;
     border: 1px solid rgba(232,200,50,0.7) !important;
-    z-index: 4 !important;
+    z-index: 10 !important;
   }
 
   .spring-card .wc-bg {
     height: 220px !important;
     aspect-ratio: auto !important;
-    background:
-      url('the-spring-logo.png') center center / 220px auto no-repeat,
-      var(--black) !important;
+    background: url('the-spring-logo.png') center center / 220px auto no-repeat, var(--black) !important;
   }
 
   .spring-card .wc-ov {
@@ -479,8 +478,9 @@ footer{background:var(--near-black);border-top:1px solid rgba(255,255,255,0.06);
     display: none !important;
   }
 
-  .work-grid .wc:nth-child(5) .wc-bg {
-    opacity: .82 !important;
+  .wc:has(img[src="usatoday-thumb.png"]) .wc-bg {
+    opacity: 1 !important;
+    filter: brightness(1.22) !important;
   }
 }
 </style>
