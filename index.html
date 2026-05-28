@@ -507,12 +507,33 @@ img.wc-bg {
     font-size: 16px;
   }
 }
+.spring-logo-img {
+  position:absolute;
+  top:34%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:260px;
+  max-width:44%;
+  height:auto;
+  object-fit:contain;
+}
+
 @media (max-width: 760px) {
   .spring-card .wc-bg {
-    height: 220px !important;
-    background:
-      url('the-spring-logo.png') center 38%/260px auto no-repeat,
-      linear-gradient(135deg,#4a1a7a 0%,#6b2d9e 35%,#9b4ab5 65%,#c8623a 100%) !important;
+    height:220px !important;
+  }
+
+  .spring-card .wc-ov {
+    position:relative !important;
+    inset:auto !important;
+    background:var(--black) !important;
+    padding:44px 32px !important;
+  }
+
+  .spring-logo-img {
+    top:50%;
+    width:220px;
+    max-width:70%;
   }
 }
 </style>
@@ -723,17 +744,15 @@ img.wc-bg {
 </div>
 <!-- The Spring -->
 <div class="wc reveal spring-card">
-  <div class="wc-bg" style="background:
-    url('the-spring-logo.png') center 70px/220px auto no-repeat,
-    linear-gradient(135deg,#4a1a7a 0%,#6b2d9e 35%,#9b4ab5 65%,#c8623a 100%);
-  "></div>
+  <div class="wc-bg" style="background:linear-gradient(135deg,#4a1a7a 0%,#6b2d9e 35%,#9b4ab5 65%,#c8623a 100%);">
+    <img src="the-spring-logo.png" alt="The Spring of Tampa Bay logo" class="spring-logo-img">
+  </div>
 
   <div class="wc-ov" style="background:linear-gradient(to top,rgba(25,8,45,0.97) 0%,rgba(25,8,45,0.45) 40%,transparent 100%);">
     <span class="wc-brand">The Spring — Purpose-Led Growth Strategy</span>
     <h3 class="wc-title">Building the Next 50 Years</h3>
     <p class="wc-desc">Strategic roadmap, campaign platform, and KPI framework guiding the organization toward its 50th anniversary milestone in 2027 — aligning community impact, storytelling, and fundraising.</p>
   </div>
-</div>>
 </div>
 <!-- NIL -->
     <div class="wc reveal">
