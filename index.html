@@ -508,14 +508,27 @@ img.wc-bg {
   }
 }
 @media (max-width: 760px) {
+  .spring-card {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
   .spring-card .wc-bg {
+    position: relative !important;
+    display: block !important;
     height: 220px !important;
+    width: 100% !important;
     background-position: center center, center center !important;
     background-size: 260px auto, cover !important;
   }
 
   .spring-card .wc-ov {
+    position: relative !important;
+    inset: auto !important;
+    display: block !important;
     background: var(--black) !important;
+    padding: 44px 32px !important;
   }
 }
 </style>
