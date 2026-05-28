@@ -446,19 +446,42 @@ footer{background:var(--near-black);border-top:1px solid rgba(255,255,255,0.06);
 }
 @media (max-width: 760px) {
 
-  /* SPRING CARD ONLY */
-  .work-grid .wc:nth-child(5) .wc-bg {
+  .vid-badge {
+    order: 2 !important;
+    position: relative !important;
+    display: inline-flex !important;
+    width: fit-content !important;
+    margin: 0 !important;
+    padding: 12px 18px !important;
+    background: var(--black) !important;
+    color: var(--yellow) !important;
+    border: 1px solid rgba(232,200,50,0.7) !important;
+    z-index: 4 !important;
+  }
+
+  .spring-card .wc-bg {
     height: 220px !important;
+    aspect-ratio: auto !important;
     background:
       url('the-spring-logo.png') center center / 220px auto no-repeat,
       var(--black) !important;
   }
 
-  .work-grid .wc:nth-child(5) .wc-bg img,
-  .work-grid .wc:nth-child(5) .wc-bg > div {
+  .spring-card .wc-ov {
+    position: relative !important;
+    inset: auto !important;
+    background: var(--black) !important;
+    padding: 28px 24px 32px !important;
+  }
+
+  .spring-card .wc-bg img,
+  .spring-card .wc-bg > div {
     display: none !important;
   }
 
+  .work-grid .wc:nth-child(5) .wc-bg {
+    opacity: .82 !important;
+  }
 }
 </style>
 </head>
