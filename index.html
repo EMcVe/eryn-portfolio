@@ -507,6 +507,17 @@ img.wc-bg {
     font-size: 16px;
   }
 }
+@media (max-width: 760px) {
+  .spring-card .wc-bg {
+    height: 220px !important;
+    background-position: center center, center center !important;
+    background-size: 260px auto, cover !important;
+  }
+
+  .spring-card .wc-ov {
+    background: var(--black) !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -714,7 +725,7 @@ img.wc-bg {
   </div>
 </div>
 <!-- The Spring — warm brand colors matching thespring.org -->
-    <div class="wc reveal">
+    <div class="wc reveal spring-card">
       <div style="position:absolute;inset:0;background:linear-gradient(135deg,#4a1a7a 0%,#6b2d9e 35%,#9b4ab5 65%,#c8623a 100%);">
         <!-- Large centered logo -->
         <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:20px 20px 60px 20px;">
